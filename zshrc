@@ -27,5 +27,12 @@ antigen apply
 export EDITOR=vim
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.aliases ] && source ~/.aliases
-ZSH_TMUX_AUTOSTART='true'
 
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
+gpgconf --launch gpg-agent
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
