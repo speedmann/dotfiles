@@ -1,0 +1,6 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = speedmann
+	email = speedmann@speedmann.de
+	signingkey = E9C7349D541DBBA2
