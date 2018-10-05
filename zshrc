@@ -1,14 +1,15 @@
 source /usr/local/share/antigen/antigen.zsh
 antigen use oh-my-zsh
 
+
 # plugins from default library (oh-my-zsh)
-plugins=(git fasd z tmux tmuxinator)
+plugins=(git fasd z tmux tmuxinator zsh-iterm-touchbar)
 for plugin in $plugins
 do
   antigen bundle $plugin
 done
 
-export LC_ALL="en_US.utf8"
+export LC_ALL="en_US.UTF-8"
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
