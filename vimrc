@@ -70,12 +70,12 @@ nnoremap <silent> <S-t> :tabnew<CR>
 " Auto intendation for python
 au BufNewFile,BufRead *.py
     \ set tabstop=4
-    \ set softtabstop=2 
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+    \ | set softtabstop=2 
+    \ | set shiftwidth=4
+    \ | set textwidth=79
+    \ | set expandtab
+    \ | set autoindent
+    \ | set fileformat=unix
 
 " Auto intendation for yml
 au BufNewFile,BufRead *.yml
